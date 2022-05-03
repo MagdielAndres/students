@@ -1,0 +1,19 @@
+{
+  "name": "students",
+  "version": "1.0.0",
+  "description": "Obtener cierta información de los estudiantes y exponerlo mediante un API server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagdielAndres/students.git"
+  },
+  "author": "Magidel Andrés Castellanos de la Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagdielAndres/students/issues"
+  },
+  "homepage": "https://github.com/MagdielAndres/students#readme"
+}
