@@ -15,4 +15,11 @@ describe('Test, StudentService', () => {
 
         expect(studentsEmails.length).toEqual(29);
     });
+
+    test('3) Obtener todos los estudiantes que tengan credits mayor a 500', () => { 
+        const student = Reader.readJsonFile("Estudiantes.json");
+        const studentsCredit = StudentService.studentsCreditsMayor500(student, 500);
+
+        expect(studentsCredit.length).toBe(27);
+    });
 });
