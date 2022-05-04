@@ -8,4 +8,11 @@ describe('Test, StudentService', () => {
 
         expect(studentsAll.length).toBe(51);
     });
+
+    test('2) Obtener todos los email que tengan certificación haveCertification', () => { 
+        const students = Reader.readJsonFile("Estudiantes.json");  
+        const studentsEmails = StudentService.studentsHaveCertification(students, true);
+
+        expect(studentsEmails.length).toEqual(29);
+    });
 });
