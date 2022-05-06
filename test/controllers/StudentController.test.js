@@ -6,4 +6,11 @@ describe('Test StudentController', () => {
 
         expect(infoAllStudents.length).toBe(51);
     });
+
+    test('2) Obtener los emails de todos los estudiantes que tengan certificación haveCertification', () => { 
+        const haveCertification = true;
+        const studentsEmails = StudentController.getStudentsEmail(haveCertification);
+
+        expect(studentsEmails.length).toBe(29);
+    });
 });
