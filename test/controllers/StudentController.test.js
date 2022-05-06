@@ -13,4 +13,10 @@ describe('Test StudentController', () => {
 
         expect(studentsEmails.length).toBe(29);
     });
+
+    test('3) Método para todos los estudiantes que tengan credits mayor a 500', () => { 
+        const studentsCreditsMayor500 = StudentController.getStudentsCreditsMayor500(500);
+
+        expect(studentsCreditsMayor500.length).toBe(27);
+    });
 });
