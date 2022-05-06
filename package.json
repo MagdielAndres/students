@@ -4,7 +4,8 @@
   "description": "Obtener cierta información de los estudiantes y exponerlo mediante un API server",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest.js"
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "server": "node ./lib/server.js"
   },
   "repository": {
     "type": "git",
