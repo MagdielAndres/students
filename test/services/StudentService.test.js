@@ -11,14 +11,14 @@ describe('Test, StudentService', () => {
 
     test('2) Obtener todos los email que tengan certificación haveCertification', () => { 
         const students = Reader.readJsonFile("Estudiantes.json");  
-        const studentsEmails = StudentService.studentsHaveCertification(students, true);
+        const studentsEmails = StudentService.studentsHaveCertification(students);
 
         expect(studentsEmails.length).toEqual(29);
     });
 
     test('3) Obtener todos los estudiantes que tengan credits mayor a 500', () => { 
         const student = Reader.readJsonFile("Estudiantes.json");
-        const studentsCredit = StudentService.studentsCreditsMayor500(student, 500);
+        const studentsCredit = StudentService.studentsCreditsMayor500(student);
 
         expect(studentsCredit.length).toBe(27);
     });
