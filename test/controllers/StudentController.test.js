@@ -8,14 +8,13 @@ describe('Test StudentController', () => {
     });
 
     test('2) Obtener los emails de todos los estudiantes que tengan certificación haveCertification', () => { 
-        const haveCertification = true;
-        const studentsEmails = StudentController.getStudentsEmail(haveCertification);
+        const studentsEmails = StudentController.getStudentsEmail();
 
         expect(studentsEmails.length).toBe(29);
     });
 
     test('3) Método para todos los estudiantes que tengan credits mayor a 500', () => { 
-        const studentsCreditsMayor500 = StudentController.getStudentsCreditsMayor500(500);
+        const studentsCreditsMayor500 = StudentController.getStudentsCreditsMayor500();
 
         expect(studentsCreditsMayor500.length).toBe(27);
     });
