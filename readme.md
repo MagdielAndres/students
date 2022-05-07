@@ -97,19 +97,20 @@
 ## Explicación del diseño de los componentes del proyecto.
 ```mermaid
 
-flowchart TB;
+flowchart LR;
     Reader -.- id1[(Estudiantes.json)];
     Reader --> StudentService;
     StudentService --> StudentController;
     StudentController --> Server
     Server --> StudentController
-    Server -.- API
-    /v1/students -.GET.-> API
+    Server -.-> API
+    /v1/students -.GET.- API
     /v1/students/emails -.GET.- API
     /v1/students/credits -.GET.- API
     subgraph express
     Server
     end
+    
     
 ```
 ## Cómo consultarla la API, para exponer sus funcionalidades.
